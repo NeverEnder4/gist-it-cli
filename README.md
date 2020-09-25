@@ -40,7 +40,7 @@ USAGE
 
 ## `gist-it create`
 
-Describe the command here
+Creates a GitHub gist with select files from your current working directory.
 
 ```
 USAGE
@@ -48,7 +48,7 @@ USAGE
 
 
 DESCRIPTION
-  Run the command and answer the question prompts to create a gist with file(s) from your current working directory.
+  Run the command and answer the question prompts to create a gist with files from your current working directory.
 ```
 
 _See code: [src/commands/create.js](https://github.com/cli/gist-it-cli/blob/v0.0.0/src/commands/create.js)_
