@@ -48,7 +48,6 @@ USAGE
 
 
 DESCRIPTION
-  ...
   Run the command and answer the question prompts to create a gist with file(s) from your current working directory.
 ```
 
