@@ -1,0 +1,63 @@
+{
+  "name": "gist-it-cli",
+  "description": "A CLI for managing your GitHub gists.",
+  "version": "0.0.0",
+  "author": "Tony Pettigrew",
+  "bin": {
+    "gist-it": "./bin/run"
+  },
+  "bugs": "https://github.com/cli/gist-it-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "@octokit/auth-basic": "^1.4.6",
+    "@octokit/rest": "^18.0.6",
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.1",
+    "figlet": "^1.5.0",
+    "glob": "^7.1.6",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "globby": "^10",
+    "mocha": "^5",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/cli/gist-it-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "gist-it",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "cli/gist-it-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
