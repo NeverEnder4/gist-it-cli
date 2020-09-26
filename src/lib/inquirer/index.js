@@ -46,7 +46,7 @@ const askGistDetails = (fileList) => {
       type: 'input',
       name: 'description',
       default: argv._[0] || null,
-      message: 'Optionally enter a description of the repository:',
+      message: 'Optionally enter a description of the gist:',
     },
     {
       type: 'checkbox',

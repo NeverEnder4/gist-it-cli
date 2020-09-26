@@ -10,7 +10,6 @@ const conf = new Configstore('gist-it-store');
 
 let octokit;
 
-// Functions
 const getInstance = () => {
   return octokit;
 };

@@ -8,15 +8,14 @@ A CLI for managing your GitHub gists.
 [![License](https://img.shields.io/npm/l/gist-it-cli.svg)](https://github.com/cli/gist-it-cli/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [gist-it-cli](#gist-it-cli)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g gist-it-cli
 $ gist-it COMMAND
@@ -28,27 +27,26 @@ USAGE
   $ gist-it COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`gist-it create`](#gist-it-create)
-- [`gist-it help [COMMAND]`](#gist-it-help-command)
+* [`gist-it create`](#gist-it-create)
+* [`gist-it help [COMMAND]`](#gist-it-help-command)
+* [`gist-it list`](#gist-it-list)
 
 ## `gist-it create`
 
-Creates a GitHub gist with select files from your current working directory.
+Create a GitHub gist from files in your current working directory.
 
 ```
 USAGE
   $ gist-it create
 
-
 DESCRIPTION
-  Run the command and answer the question prompts to create a gist with files from your current working directory.
+  ...
+  Extra documentation goes here
 ```
 
 _See code: [src/commands/create.js](https://github.com/cli/gist-it-cli/blob/v0.0.0/src/commands/create.js)_
@@ -70,4 +68,21 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
+## `gist-it list`
+
+Describe the command here
+
+```
+USAGE
+  $ gist-it list
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/list.js](https://github.com/cli/gist-it-cli/blob/v0.0.0/src/commands/list.js)_
 <!-- commandsstop -->

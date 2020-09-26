@@ -7,19 +7,16 @@ class CreateCommand extends Command {
     const logger = require('../lib/logger');
 
     logger.clearAll();
-    logger.logGistIt();
-
-    const getGitHubToken = async () => {
-      let token = github.getStoredGithubToken();
-      if (token) return token;
-
-      token = await github.getPersonalAccessToken();
-      return token;
-    };
+    logger.logTitle();
 
     try {
       // Retrieve & Set Auth Token
-      const token = await getGitHubToken();
+      let token = github.getStoredGithubToken();
+      if (!token) {
+        logger.clearAll();
+        logger.logTitle();
+        token = await github.getPersonalAccessToken();
+      }
       github.githubAuth(token);
 
       // Create gist or return error
